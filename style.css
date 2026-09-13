@@ -124,6 +124,35 @@ img {
   background-color: var(--color-surface-2);
 }
 
+/* ---------- Language toggle ---------- */
+
+.lang-toggle {
+  display: inline-flex;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.lang-toggle button {
+  padding: 6px 14px;
+  border: none;
+  background: transparent;
+  color: var(--color-text-muted);
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.lang-toggle button:hover {
+  color: var(--color-text);
+}
+
+.lang-toggle button.active {
+  background-color: var(--color-surface-2);
+  color: var(--color-text);
+}
+
 /* ---------- Hero ---------- */
 
 .hero {
@@ -329,6 +358,12 @@ img {
 .page-content h2 {
   font-size: 1.3rem;
   margin: 36px 0 12px;
+}
+
+.page-content h3 {
+  font-size: 1.05rem;
+  margin: 20px 0 8px;
+  color: var(--color-text);
 }
 
 .page-content p,
